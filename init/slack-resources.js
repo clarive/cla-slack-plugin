@@ -5,7 +5,7 @@ ci.createRole("Slack");
 ci.createClass("SlackIncomingWebhook", {
     form: '/plugin/cla-slack-plugin/form/slack-incoming-webhook.js',
     icon: '/plugin/cla-slack-plugin/icon/slack.svg',
-    roles: [ "Slack" ],
+    roles: [ "Slack","ClariveSE" ],
     has: {
         webhookURL: {
             is: "rw",
@@ -24,7 +24,7 @@ ci.createClass("SlackIncomingWebhook", {
 ci.createClass("SlackOutgoingWebhook", {
     form: '/plugin/cla-slack-plugin/form/slack-outgoing-webhook.js',
     icon: '/plugin/cla-slack-plugin/icon/slack.svg',
-    roles: [ "Slack" ],
+    roles: [ "Slack","ClariveSE" ],
     has: {
         token: {
             is: "rw",
